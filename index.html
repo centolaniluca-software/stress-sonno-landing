@@ -4,14 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Stress e Sonno | Luca Centolani</title>
-  <meta name="description" content="Percorso naturale per ritrovare calma e sonno migliore">
+  <title>Stress + Sonno | Luca Centolani</title>
+  <meta name="description" content="Percorso naturale per ritrovare calma, sonno più profondo e alleggerire le tensioni.">
 
-  <link rel="preconnect" href="https://connect.facebook.net">
-  <link rel="preconnect" href="https://www.facebook.com">
-
-
-  <!-- META PIXEL (UNICA AGGIUNTA) -->
+  <!-- Meta Pixel -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -25,7 +21,6 @@
     fbq('init', '220009700640058');
     fbq('track', 'PageView');
   </script>
-
   <noscript>
     <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=220009700640058&ev=PageView&noscript=1"/>
@@ -121,21 +116,6 @@
       display:flex;align-items:center;justify-content:center;font-weight:900;
     }
 
-    #lc-stress-sonno .step{display:grid;gap:10px}
-    #lc-stress-sonno .stepItem{
-      display:flex;gap:12px;align-items:flex-start;
-      background:#fff;border:1px solid rgba(11,18,32,.10);
-      box-shadow:0 10px 30px rgba(11,18,32,.05);
-      border-radius:18px;padding:14px;
-    }
-    #lc-stress-sonno .num{
-      width:34px;height:34px;border-radius:14px;
-      display:flex;align-items:center;justify-content:center;
-      background:linear-gradient(135deg, rgba(120,210,190,.22), rgba(150,120,255,.18));
-      border:1px solid rgba(11,18,32,.08);
-      font-weight:900;
-    }
-
     #lc-stress-sonno .quote{
       border-radius:18px;padding:16px;background:#0b1220;color:#fff;
       border:1px solid rgba(255,255,255,.12);
@@ -163,22 +143,27 @@
     #lc-stress-sonno .sticky .btnPrimary{flex:1 1 auto}
     #lc-stress-sonno .sticky .btnGhost{flex:0 0 auto;white-space:nowrap}
 
+    /* FAQ */
+    #lc-stress-sonno .faq{display:grid;gap:10px;margin-top:10px}
+    #lc-stress-sonno details.faqItem{
+      border-radius:18px;padding:14px;background:#fff;
+      border:1px solid rgba(11,18,32,.10);
+      box-shadow:0 10px 30px rgba(11,18,32,.05);
+    }
+    #lc-stress-sonno details.faqItem summary{
+      cursor:pointer;font-weight:850;list-style:none;
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+    }
+    #lc-stress-sonno details.faqItem summary::-webkit-details-marker{display:none}
+    #lc-stress-sonno .faqA{margin-top:10px;color:rgba(11,18,32,.78);line-height:1.55;font-size:14px}
+
     @media (min-width: 920px){
       #lc-stress-sonno .hero{padding:34px 0 26px}
       #lc-stress-sonno .grid{grid-template-columns:repeat(3,1fr)}
       #lc-stress-sonno .twoCol{display:grid;grid-template-columns:1.05fr .95fr;gap:14px}
       #lc-stress-sonno .twoCol2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-      #lc-stress-sonno .step{grid-template-columns:repeat(3,1fr)}
     }
   </style>
-
-  <!-- LINKS (fixati) -->
-  <!-- WhatsApp -->
-  <!-- Nota: target=_blank aiuta tantissimo dentro Wix -->
-  <!-- Form Wix -->
-  <!-- Usa https completo -->
-  <!-- Message precompilato -->
-  <!--  -->
 
   <section class="hero">
     <div class="wrap">
@@ -263,6 +248,43 @@ Grazie Luca!”</p>
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <h2 class="secTitle">Domande frequenti</h2>
+
+      <div class="faq">
+        <details class="faqItem">
+          <summary>È adatto anche se ho problemi di sonno o stress da mesi?</summary>
+          <div class="faqA">
+            Sì, spesso lavorano con me persone che convivono con stress e sonno disturbato da tempo.
+            Il percorso non è “standard”: partiamo da ciò che stai vivendo ora e lavoriamo su corpo, sistema nervoso e abitudini quotidiane,
+            in modo graduale e sostenibile. Dopo il primo contatto capiamo insieme se e come può esserti utile.
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Come funziona il primo contatto? Devo decidere subito un percorso?</summary>
+          <div class="faqA">
+            No. Il primo contatto serve solo per capire se posso aiutarti.
+            Scrivendomi su WhatsApp o compilando il form mi racconti brevemente cosa stai vivendo:
+            ti rispondo io, senza impegno, e valutiamo insieme il passo successivo.
+            Nessuna pressione, nessun pacchetto obbligatorio.
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Dove ricevi e che tipo di approccio utilizzi?</summary>
+          <div class="faqA">
+            Ricevo su appuntamento a Solarolo (RA).
+            Il mio è un approccio olistico e integrato: lavoro sul corpo, sulla regolazione dello stress e sul supporto alle abitudini quotidiane.
+            Non sostituisco il medico: se necessario, il lavoro può affiancare altri percorsi già in corso.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="contatto">
     <div class="wrap">
       <div class="ctaBand">
@@ -313,24 +335,35 @@ Grazie Luca!”</p>
   </div>
 </div>
 
-
-<!-- (facoltativo ma consigliato) -->
+<!-- Tracking eventi click -->
 <script>
-  document.addEventListener("click", function(e){
-    const a = e.target.closest("a");
-    if (!a || typeof fbq !== "function") return;
+  (function () {
+    function fire(name, params) {
+      if (typeof fbq === "function") fbq("trackCustom", name, params || {});
+    }
 
-    if (a.href.includes("wa.me")) {
-      fbq("trackCustom", "WhatsApp_Click");
-    try {
-  const u = new URL(a.href);
-  if (u.hostname.endsWith("lucacentolani.net") && u.pathname.startsWith("/contatti")) {
-    fbq("trackCustom", "Form_Click");
-  }
-} catch(e) {}
+    document.addEventListener("click", function (e) {
+      var a = e.target && e.target.closest ? e.target.closest("a") : null;
+      if (!a) return;
 
-  });
+      var href = (a.getAttribute("href") || "").trim();
+      if (!href) return;
+
+      if (href.indexOf("wa.me/") !== -1) {
+        fire("WhatsApp_Click", { href: href });
+      }
+
+      if (
+        href === "/contatti" ||
+        href.indexOf("lucacentolani.net/contatti") !== -1 ||
+        href.indexOf("/contatti") !== -1
+      ) {
+        fire("Contatti_Click", { href: href });
+      }
+    });
+  })();
 </script>
 
 </body>
 </html>
+
