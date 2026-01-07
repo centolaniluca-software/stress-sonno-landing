@@ -82,6 +82,15 @@
     #lc-stress-sonno .micro{margin-top:10px;color:rgba(255,255,255,.74);font-size:13px;line-height:1.4}
     #lc-stress-sonno .micro strong{color:rgba(255,255,255,.92)}
 
+    /* NEW: micro-rassicurazione sotto CTA */
+    #lc-stress-sonno .ctaNote{
+      margin-top:8px;
+      color:rgba(255,255,255,.72);
+      font-size:13px;
+      line-height:1.4;
+    }
+    #lc-stress-sonno .ctaNote strong{color:rgba(255,255,255,.92)}
+
     #lc-stress-sonno .section{padding:22px 0}
     #lc-stress-sonno .secTitle{margin:0 0 10px;letter-spacing:-.35px;font-size:clamp(18px, 5.2vw, 26px)}
 
@@ -139,10 +148,19 @@
       backdrop-filter: blur(10px);
       border-top:1px solid rgba(255,255,255,.10);
     }
-    #lc-stress-sonno .stickyInner{max-width:1060px;margin:0 auto;display:flex;gap:10px}
+    #lc-stress-sonno .stickyInner{max-width:1060px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap}
     #lc-stress-sonno .sticky .btn{border-radius:14px;padding:12px 14px;font-size:14px;min-height:46px}
     #lc-stress-sonno .sticky .btnPrimary{flex:1 1 auto}
     #lc-stress-sonno .sticky .btnGhost{flex:0 0 auto;white-space:nowrap}
+
+    /* NEW: nota rassicurante anche nello sticky */
+    #lc-stress-sonno .stickyNote{
+      max-width:1060px;margin:6px auto 0;
+      padding:0 2px;
+      color:rgba(255,255,255,.72);
+      font-size:12.5px;
+      line-height:1.35;
+    }
 
     /* FAQ */
     #lc-stress-sonno .faq{display:grid;gap:10px;margin-top:10px}
@@ -174,18 +192,23 @@
         e alleggerire le tensioni (collo, spalle, schiena).
       </p>
 
-     <div class="ctaRow">
-  <a class="btn btnPrimary"
-     href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20ho%20visto%20la%20pagina%20su%20stress%20e%20sonno.%20Vorrei%20qualche%20informazione%2C%20grazie."
-     target="_blank" rel="noopener noreferrer">
-    Scrivimi su WhatsApp
-  </a>
+      <div class="ctaRow">
+        <a class="btn btnPrimary"
+           href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20arrivo%20dalla%20pagina%20%22Stress%20%2B%20Sonno%22.%0AIn%20questo%20periodo%20mi%20sento%20spesso%20in%20allerta%20e%20dormo%20male%2C%20con%20tensioni%20a%20collo%2Fspalle.%0AVorrei%20capire%20se%20il%20tuo%20approccio%20pu%C3%B2%20fare%20per%20me."
+           target="_blank" rel="noopener noreferrer">
+          Scrivimi su WhatsApp
+        </a>
 
         <a class="btn btnGhost"
            href="https://www.lucacentolani.net/contatti"
            target="_blank" rel="noopener noreferrer">
           Oppure usa il form
         </a>
+      </div>
+
+      <!-- NEW: rassicurazione sotto CTA -->
+      <div class="ctaNote">
+        <strong>Il primo messaggio serve solo</strong> per capire se posso aiutarti. Nessun impegno.
       </div>
 
       <div class="micro">
@@ -291,11 +314,11 @@ Grazie Luca!”</p>
       <div class="ctaBand">
         <h2 class="secTitle" style="margin:0 0 8px">Vuoi capire se fa per te?</h2>
         <div style="color:rgba(255,255,255,.80);line-height:1.5">
-          Scrivimi <strong>INFO</strong> su WhatsApp e dimmi in una frase cosa stai vivendo.
+          Scrivimi su WhatsApp e dimmi in una frase cosa stai vivendo.
         </div>
         <div class="ctaRow" style="margin-top:12px">
           <a class="btn btnPrimary"
-             href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20ho%20visto%20la%20pagina%20su%20stress%20e%20sonno.%20Vorrei%20qualche%20informazione%2C%20grazie."
+             href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20arrivo%20dalla%20pagina%20%22Stress%20%2B%20Sonno%22.%0AIn%20questo%20periodo%20mi%20sento%20spesso%20in%20allerta%20e%20dormo%20male%2C%20con%20tensioni%20a%20collo%2Fspalle.%0AVorrei%20capire%20se%20il%20tuo%20approccio%20pu%C3%B2%20fare%20per%20me."
              target="_blank" rel="noopener noreferrer">
             Scrivi ora su WhatsApp
           </a>
@@ -305,7 +328,10 @@ Grazie Luca!”</p>
             Apri il form
           </a>
         </div>
+
+        <!-- NEW: rassicurazione anche qui -->
         <div class="small" style="margin-top:10px;color:rgba(255,255,255,.72)">
+          <strong>Il primo messaggio serve solo</strong> per capire se posso aiutarti • Nessun impegno<br>
           🕒 entro 24h lavorative • 🔒 niente spam • ✅ risposta umana
         </div>
       </div>
@@ -323,15 +349,20 @@ Grazie Luca!”</p>
   <div class="sticky" aria-label="Contatto rapido">
     <div class="stickyInner">
       <a class="btn btnPrimary"
-        href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20ho%20visto%20la%20pagina%20su%20stress%20e%20sonno.%20Vorrei%20qualche%20informazione%2C%20grazie."
+         href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20arrivo%20dalla%20pagina%20%22Stress%20%2B%20Sonno%22.%0AIn%20questo%20periodo%20mi%20sento%20spesso%20in%20allerta%20e%20dormo%20male%2C%20con%20tensioni%20a%20collo%2Fspalle.%0AVorrei%20capire%20se%20il%20tuo%20approccio%20pu%C3%B2%20fare%20per%20me."
          target="_blank" rel="noopener noreferrer">
-        WhatsApp • INFO
+        WhatsApp • Scrivimi
       </a>
       <a class="btn btnGhost"
          href="https://www.lucacentolani.net/contatti"
          target="_blank" rel="noopener noreferrer">
         Form
       </a>
+    </div>
+
+    <!-- NEW: rassicurazione nello sticky -->
+    <div class="stickyNote">
+      <strong>Il primo messaggio serve solo</strong> per capire se posso aiutarti. Nessun impegno.
     </div>
   </div>
 </div>
@@ -364,6 +395,10 @@ Grazie Luca!”</p>
     });
   })();
 </script>
+
+</body>
+</html>
+
 
 </body>
 </html>
