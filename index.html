@@ -223,10 +223,11 @@ Se i sintomi si ripresentano da settimane, intervenire ora è più semplice che 
 
       <div class="ctaRow">
         <a class="btn btnPrimary"
-           href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20mi%20riconosco%20nei%20disturbi%20ricorrenti%20da%20stress.%20Il%20mio%20sintomo%20principale%20%C3%A8%20____%20e%20va%20avanti%20da%20____.%20Possiamo%20capire%20se%20la%20prima%20consulenza%20fa%20per%20me%3F"
+          href=https://wa.me/393478221395?text=Ciao%20Luca%2C%20ho%20visto%20la%20pagina%20sui%20disturbi%20che%20tornano.%20Vorrei%20capire%20se%20la%20prima%20consulenza%20fa%20per%20me.
            target="_blank" rel="noopener noreferrer">
           WhatsApp • Scrivimi ora
         </a>
+        <a class="btn btnGhost" href="tel:+393478221395">Chiamami (2 min)</a>
       </div>
 
       <div class="ctaNote">
@@ -348,10 +349,11 @@ Se i sintomi si ripresentano da settimane, intervenire ora è più semplice che 
 
         <div class="ctaRow" style="margin-top:12px">
           <a class="btn btnPrimary"
-             href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20mi%20riconosco%20nei%20disturbi%20ricorrenti%20da%20stress.%20Il%20mio%20sintomo%20principale%20%C3%A8%20____%20e%20va%20avanti%20da%20____.%20Possiamo%20capire%20se%20la%20prima%20consulenza%20fa%20per%20me%3F"
+             href=https://wa.me/393478221395?text=Ciao%20Luca%2C%20ho%20visto%20la%20pagina%20sui%20disturbi%20che%20tornano.%20Vorrei%20capire%20se%20la%20prima%20consulenza%20fa%20per%20me.
              target="_blank" rel="noopener noreferrer">
             WhatsApp • Scrivimi ora
           </a>
+          <a class="btn btnGhost" href="tel:+393478221395">Chiamami (2 min)</a>
         </div>
 
         <div class="small" style="margin-top:10px;color:rgba(255,255,255,.72)">
@@ -394,10 +396,11 @@ Se i sintomi si ripresentano da settimane, intervenire ora è più semplice che 
   <div class="sticky" aria-label="Contatto rapido">
     <div class="stickyInner">
       <a class="btn btnPrimary"
-         href="https://wa.me/393478221395?text=Ciao%20Luca%2C%20mi%20riconosco%20nei%20disturbi%20ricorrenti%20da%20stress.%20Il%20mio%20sintomo%20principale%20%C3%A8%20____%20e%20va%20avanti%20da%20____.%20Possiamo%20capire%20se%20la%20prima%20consulenza%20fa%20per%20me%3F"
+         href=https://wa.me/393478221395?text=Ciao%20Luca%2C%20ho%20visto%20la%20pagina%20sui%20disturbi%20che%20tornano.%20Vorrei%20capire%20se%20la%20prima%20consulenza%20fa%20per%20me.
          target="_blank" rel="noopener noreferrer">
         WhatsApp • Scrivimi ora
       </a>
+      <a class="btn btnGhost" href="tel:+393478221395">Chiamami (2 min)</a>
     </div>
   </div>
 
@@ -418,6 +421,7 @@ Se i sintomi si ripresentano da settimane, intervenire ora è più semplice che 
 
       if (href.indexOf("wa.me/") !== -1) {
         fire("WhatsApp_Click", { href: href });
+        if (typeof fbq === "function") fbq("track", "Contact");
       }
 
       if (href.indexOf("lucacentolani.net/contatti") !== -1 || href.indexOf("/contatti") !== -1) {
@@ -429,6 +433,7 @@ Se i sintomi si ripresentano da settimane, intervenire ora è più semplice che 
 
 </body>
 </html>
+
 
 
 
